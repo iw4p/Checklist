@@ -13,6 +13,7 @@
 		3C24CED021D5372000946CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C24CECF21D5372000946CED /* Assets.xcassets */; };
 		3C24CED321D5372000946CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C24CED121D5372000946CED /* LaunchScreen.storyboard */; };
 		3C24CEDB21D578B000946CED /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C24CEDA21D578B000946CED /* ChecklistItem.swift */; };
+		3C28DBC721E925DC004D9A7F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28DBC621E925DC004D9A7F /* DataModel.swift */; };
 		3C4856D521DA660800C9D820 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4856D421DA660800C9D820 /* ItemDetailViewController.swift */; };
 		3CFA40B221E5220A007FBB09 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA40B121E5220A007FBB09 /* AllListsViewController.swift */; };
 		3CFA40B421E52926007FBB09 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA40B321E52926007FBB09 /* Checklist.swift */; };
@@ -28,6 +29,7 @@
 		3C24CED221D5372000946CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C24CED421D5372000946CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C24CEDA21D578B000946CED /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		3C28DBC621E925DC004D9A7F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		3C4856D421DA660800C9D820 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		3CFA40B121E5220A007FBB09 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		3CFA40B321E52926007FBB09 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3C24CEC821D5371F00946CED /* AppDelegate.swift */,
+				3C28DBC621E925DC004D9A7F /* DataModel.swift */,
 				3C24CECA21D5371F00946CED /* ChecklistViewController.swift */,
 				3CFA40B321E52926007FBB09 /* Checklist.swift */,
 				3C24CEDA21D578B000946CED /* ChecklistItem.swift */,
@@ -155,6 +158,7 @@
 				3C4856D521DA660800C9D820 /* ItemDetailViewController.swift in Sources */,
 				3CFA40B421E52926007FBB09 /* Checklist.swift in Sources */,
 				3C24CEDB21D578B000946CED /* ChecklistItem.swift in Sources */,
+				3C28DBC721E925DC004D9A7F /* DataModel.swift in Sources */,
 				3CFA40B221E5220A007FBB09 /* AllListsViewController.swift in Sources */,
 				3C24CEC921D5371F00946CED /* AppDelegate.swift in Sources */,
 			);
