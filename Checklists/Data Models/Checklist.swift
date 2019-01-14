@@ -24,9 +24,9 @@ class Checklist: NSObject, Codable {
     
 
     
-    init(name: String) {
+    init(name: String, iconName: String = "No Icon") {
         self.name = name
-//        self.iconName = iconName
+        self.iconName = iconName
         super.init()
     }
 }
