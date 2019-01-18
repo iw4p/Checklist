@@ -43,7 +43,8 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
-        
+        shouldRemindSwitch.addTarget(self, action: #selector(ItemDetailViewController.switchStateDidChange(_:)), for: .valueChanged)
+
         if let item = itemToEdit {
             title = "Edit Item"
             textField.text = item.text
@@ -52,6 +53,15 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
             dueDate = item.dueDate
         }
         updateDueDateLabel()
+    }
+    
+    @objc func switchStateDidChange(_ sender:UISwitch){
+        if (sender.isOn == true){
+            doneBarButton.isEnabled = true
+        }
+        else{
+            doneBarButton.isEnabled = true
+        }
     }
     
     func updateDueDateLabel() {
@@ -81,7 +91,11 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     @IBAction func dateChanged(_ datePicker: UIDatePicker) {
         dueDate = datePicker.date
         updateDueDateLabel()
-        doneBarButton.isEnabled = true
+        if textField.text == "" {
+            doneBarButton.isEnabled = false
+        } else {
+            doneBarButton.isEnabled = true
+        }
     }
     
     // MARK:- Text Field Delegates
@@ -103,7 +117,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
       
         return true
     }
-    
+
     
     // MARK:- Actions
     @IBAction func cancel() {

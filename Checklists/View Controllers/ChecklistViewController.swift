@@ -53,7 +53,7 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         print("Data file path is \(dataFilePath())")
         
         navigationItem.largeTitleDisplayMode = .never
-
+        
         
     }
     
@@ -96,8 +96,6 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
             configureCheckmark(for: cell, with: item)
         }
         tableView.deselectRow(at: indexPath, animated: true)
-//        saveChecklistItems()
-
     }
     
     func configureCheckmark(for cell: UITableViewCell,
@@ -123,8 +121,10 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
     func configureText(for cell: UITableViewCell,
                        with item: ChecklistItem) {
         let label = cell.viewWithTag(1000) as! UILabel
-//        label.text = item.text
-        label.text = "\(item.itemID): \(item.text)"
+        let detailLabel = cell.viewWithTag(1002) as! UILabel
+        label.text = item.text
+        detailLabel.text = item.date
+//        label.text = "\(item.itemID): \(item.text)"
     }
     
 

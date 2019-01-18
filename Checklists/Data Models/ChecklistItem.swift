@@ -14,6 +14,7 @@ class ChecklistItem: NSObject, Codable {
     var checked = false
     
     var dueDate = Date()
+    var date = "Reminde Me: Off"
     var shouldRemind = false
     var itemID = -1
     
@@ -37,6 +38,18 @@ class ChecklistItem: NSObject, Codable {
             let request = UNNotificationRequest(identifier: "\(itemID)", content: content, trigger: trigger)
 
             let center = UNUserNotificationCenter.current()
+            
+            
+            let formatter = DateFormatter()
+            formatter.timeStyle = .medium
+            formatter.dateStyle = .medium
+            if shouldRemind == true {
+                date = formatter.string(from: dueDate)
+            } else {
+                date = "Reminde Me: Off"
+            }
+
+            
             center.add(request)
             print("Scheduled: \(request) for itemID: \(itemID)")
         }
