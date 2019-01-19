@@ -12,13 +12,13 @@ A MVC To-Do List app in Swif which has local notification, category, etc.
 
 ## Screen shots
 
-![Check List](https://user-images.githubusercontent.com/30632761/51424207-fdba1b00-1bdf-11e9-8bf0-a5b6bc6ab66b.png)
+<img src="https://user-images.githubusercontent.com/30632761/51424207-fdba1b00-1bdf-11e9-8bf0-a5b6bc6ab66b.png" width="100" height="250" />
 
-![Items](https://user-images.githubusercontent.com/30632761/51424234-57bae080-1be0-11e9-9758-2c59a7313717.png)
+<img src="https://user-images.githubusercontent.com/30632761/51424234-57bae080-1be0-11e9-9758-2c59a7313717.png" width="100" height="250" />
 
-![Setting reminder](https://user-images.githubusercontent.com/30632761/51424249-7e791700-1be0-11e9-9d36-f083efd59ff0.png)
+<img src="https://user-images.githubusercontent.com/30632761/51424249-7e791700-1be0-11e9-9d36-f083efd59ff0.png" width="100" height="250" />
 
-![Local notification](https://user-images.githubusercontent.com/30632761/51424251-846ef800-1be0-11e9-8b2d-2fb4fd6febec.png)
+<img src="https://user-images.githubusercontent.com/30632761/51424251-846ef800-1be0-11e9-8b2d-2fb4fd6febec.png" width="100" height="250" />
 
 
 ## Contributing
