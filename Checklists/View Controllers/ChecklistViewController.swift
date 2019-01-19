@@ -38,11 +38,7 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
     
 
     var checklist: Checklist!
-    var row0item = ChecklistItem()
-    var row1item = ChecklistItem()
-    var row2item = ChecklistItem()
-    var row3item = ChecklistItem()
-    var row4item = ChecklistItem()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

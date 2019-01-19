@@ -31,6 +31,7 @@ class ChecklistItem: NSObject, Codable {
             content.sound = UNNotificationSound.default
             
             let calender = Calendar(identifier: .gregorian)
+            
             let components = calender.dateComponents([.year, .month, .hour, .minute], from: dueDate)
             
             let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
@@ -48,8 +49,8 @@ class ChecklistItem: NSObject, Codable {
             } else {
                 date = "Reminde Me: Off"
             }
-
             
+                
             center.add(request)
             print("Scheduled: \(request) for itemID: \(itemID)")
         }
