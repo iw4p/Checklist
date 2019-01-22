@@ -66,17 +66,22 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     
     func updateDueDateLabel() {
         let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .persian)
+        formatter.locale = Locale(identifier: "En-IR")
         formatter.dateStyle = .medium
         formatter.timeStyle = .short
         dueDateLabel.text = formatter.string(from: dueDate)
     }
-
+    
     func showDatePicker() {
         datePickerVisible = true
         let indexPathDatePicker = IndexPath(row: 2, section: 1)
         tableView.insertRows(at: [indexPathDatePicker], with: .fade)
         datePicker.setDate(dueDate, animated: true)
         dueDateLabel.textColor = dueDateLabel.tintColor
+        datePicker.datePickerMode = .dateAndTime
+        datePicker.locale = NSLocale.init(localeIdentifier: "En-IR") as Locale
+        datePicker.calendar = NSCalendar(calendarIdentifier: .persian)! as Calendar
     }
     
     func hideDatePicker() {

@@ -215,7 +215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="216.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xmO-AH-OrZ">
+                            <datePicker contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xmO-AH-OrZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="216.5"/>
                                 <date key="date" timeIntervalSinceReferenceDate="569509641.53843904">
                                     <!--1397-10-28 13:07:21 +0000-->

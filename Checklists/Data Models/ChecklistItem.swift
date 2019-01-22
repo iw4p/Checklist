@@ -31,7 +31,7 @@ class ChecklistItem: NSObject, Codable {
             content.sound = UNNotificationSound.default
             
             let calender = Calendar(identifier: .gregorian)
-            
+        
             let components = calender.dateComponents([.year, .month, .hour, .minute], from: dueDate)
             
             let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
@@ -44,6 +44,8 @@ class ChecklistItem: NSObject, Codable {
             let formatter = DateFormatter()
             formatter.timeStyle = .medium
             formatter.dateStyle = .medium
+            formatter.locale = Locale(identifier: "En-IR")
+            formatter.dateFormat = "dd-MM-yyyy HH:mm"
             if shouldRemind == true {
                 date = formatter.string(from: dueDate)
             } else {
