@@ -82,6 +82,9 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         datePicker.datePickerMode = .dateAndTime
         datePicker.locale = NSLocale.init(localeIdentifier: "En-IR") as Locale
         datePicker.calendar = NSCalendar(calendarIdentifier: .persian)! as Calendar
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
+        datePicker.setValue(false, forKeyPath: "highlightsToday")
+
     }
     
     func hideDatePicker() {
@@ -89,7 +92,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
             datePickerVisible = false
             let indexPathDatePicker = IndexPath(row: 2, section: 1)
             tableView.deleteRows(at: [indexPathDatePicker], with: .fade)
-            dueDateLabel.textColor = UIColor.black
+            dueDateLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
     }
     

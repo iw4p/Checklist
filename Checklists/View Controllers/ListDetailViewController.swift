@@ -35,7 +35,8 @@ class ListDetailViewController: UITableViewController,UITextFieldDelegate, IconP
                 doneBarButton.isEnabled = true
                 iconName = checklist.iconName
             }
-            iconImage.image = UIImage(named: iconName)
+            iconImage.image = UIImage(named: iconName)!.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+            iconImage.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
         
         override func viewWillAppear(_ animated: Bool) {

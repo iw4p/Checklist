@@ -97,7 +97,12 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         } else {
             cell.detailTextLabel!.text = count == 0 ? "All Done" : "\(count) Remaining"
         }
-        cell.imageView!.image = UIImage(named: checklist.iconName)
+        cell.imageView!.image = UIImage(named: checklist.iconName)?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+        cell.imageView?.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        cell.backgroundColor = #colorLiteral(red: 0.1225206777, green: 0.2061331272, blue: 0.2852303982, alpha: 1)
+        cell.textLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        cell.tintColor = UIColor.white
+        cell.detailTextLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         return cell
     }
     
