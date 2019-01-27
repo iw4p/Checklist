@@ -22,8 +22,8 @@ class ListDetailViewController: UITableViewController,UITextFieldDelegate, IconP
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
-        @IBOutlet weak var iconImage: UIImageView!
-        weak var delegate: ListDetailViewControllerDelegate?
+    @IBOutlet weak var iconImage: UIImageView!
+    weak var delegate: ListDetailViewControllerDelegate?
     var checklistToEdit: Checklist?
     var iconName = "Folder"
         
@@ -46,7 +46,8 @@ class ListDetailViewController: UITableViewController,UITextFieldDelegate, IconP
         
     func iconPicker(_ picker: IconPickerViewController, didPick iconName: String) {
         self.iconName = iconName
-        iconImage.image = UIImage(named: iconName)
+        iconImage.image = UIImage(named: iconName)!.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+        iconImage.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navigationController?.popViewController(animated: true)
     }
     

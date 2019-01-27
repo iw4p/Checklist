@@ -19,6 +19,7 @@
 		3CFA40B221E5220A007FBB09 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA40B121E5220A007FBB09 /* AllListsViewController.swift */; };
 		3CFA40B421E52926007FBB09 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA40B321E52926007FBB09 /* Checklist.swift */; };
 		3CFA40B621E53098007FBB09 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA40B521E53098007FBB09 /* ListDetailViewController.swift */; };
+		3CFAB6BF21FDA80B009BDC81 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAB6BE21FDA80B009BDC81 /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3CFA40B121E5220A007FBB09 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		3CFA40B321E52926007FBB09 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		3CFA40B521E53098007FBB09 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		3CFAB6BE21FDA80B009BDC81 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				3C4856D421DA660800C9D820 /* ItemDetailViewController.swift */,
 				3CFA40B521E53098007FBB09 /* ListDetailViewController.swift */,
 				3C68F22321ED08DE002C0983 /* IconPickerViewController.swift */,
+				3CFAB6BE21FDA80B009BDC81 /* SettingTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				3CFA40B621E53098007FBB09 /* ListDetailViewController.swift in Sources */,
 				3C4856D521DA660800C9D820 /* ItemDetailViewController.swift in Sources */,
 				3C68F22421ED08DE002C0983 /* IconPickerViewController.swift in Sources */,
+				3CFAB6BF21FDA80B009BDC81 /* SettingTableViewController.swift in Sources */,
 				3CFA40B421E52926007FBB09 /* Checklist.swift in Sources */,
 				3C24CEDB21D578B000946CED /* ChecklistItem.swift in Sources */,
 				3C28DBC721E925DC004D9A7F /* DataModel.swift in Sources */,
