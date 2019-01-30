@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         let center = UNUserNotificationCenter.current()
         center.delegate = self
-        
+//        Theme.defaultTheme()
         return true
     }
     
