@@ -1,6 +1,6 @@
 //
 //  AllListsViewController.swift
-//  Checklists
+//  Mazboor
 //
 //  Created by Nima Akbarzade on 10/18/1397 AP.
 //  Copyright © 1397 AP Nima Akbarzade. All rights reserved.
@@ -140,23 +140,23 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         }
     }
     
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
-        if UserDefaults.standard.bool(forKey: "isDarkMode") {
-            cell.textLabel?.textColor = UIColor.white
-            cell.detailTextLabel?.textColor = UIColor.white
-            cell.backgroundColor = UIColor.black
-            
-            //            cell.setSelectedColor(color: UIColor.darkBackground)
-        }
-        else {
-            cell.textLabel?.textColor = UIColor.black
-            cell.detailTextLabel?.textColor = UIColor.black
-            cell.backgroundColor = UIColor.white
-            
-            //            cell.setSelectedColor(color: UIColor.lightBackground)
-        }
-    }
+//    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        
+//        if UserDefaults.standard.bool(forKey: "isDarkMode") {
+//            cell.textLabel?.textColor = UIColor.white
+//            cell.detailTextLabel?.textColor = UIColor.white
+//            cell.backgroundColor = UIColor.black
+//            
+//            //            cell.setSelectedColor(color: UIColor.darkBackground)
+//        }
+//        else {
+//            cell.textLabel?.textColor = UIColor.black
+//            cell.detailTextLabel?.textColor = UIColor.black
+//            cell.backgroundColor = UIColor.white
+//            
+//            //            cell.setSelectedColor(color: UIColor.lightBackground)
+//        }
+//    }
     
 
 }
