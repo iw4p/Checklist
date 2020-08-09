@@ -70,9 +70,11 @@ class ChecklistViewController: UITableViewController {
         items.remove(at: indexPath.row)
         
         let indexPaths = [indexPath]
-        print(indexPath)
-        print(indexPaths)
         tableView.deleteRows(at: indexPaths, with: .automatic)
+    }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        return nil
     }
     
     // MARK:- Actions
