@@ -72,7 +72,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter item name" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-nd-hls">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter item name" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-nd-hls">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="f6R-Dn-tLJ"/>
@@ -107,7 +107,7 @@
                                 <action selector="cancel" destination="p6i-D7-Dyr" id="1rl-pl-s0W"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Fij-EE-HNk">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="Fij-EE-HNk">
                             <connections>
                                 <action selector="done" destination="p6i-D7-Dyr" id="OxE-nn-aKN"/>
                             </connections>
